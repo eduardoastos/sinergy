@@ -1,0 +1,68 @@
+.products {
+  padding: 32px 16px 16px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.logoFace {
+  position: absolute;
+  right: 5px;
+  top: -10px
+}
+
+.logoFace2 {
+  position: absolute;
+  left: 5px;
+  top: -10px;
+  transform: scaleX(-1);
+}
+
+.titles {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.productsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+}
+
+.producsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #e4f5ff;
+  padding: 15px;
+  box-shadow: -6px 6px 12px #1f93ff17, 6px 6px 12px #1f93ff17, 0px 8px 14px #1f93ff17;
+}
+
+.productsCardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .products { 
+    padding: 32px;
+  }
+
+  .productsGrid {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .titles {
+    text-align: center;
+  }
+}

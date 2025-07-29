@@ -1,0 +1,105 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid #c7c9ca;
+}
+
+.imgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: none !important;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #0a87ff;
+  transform: translateX(-50%);
+}
+
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  /* border: 3px solid #fff; */
+  border-radius: 50%;
+  /* background: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 8px; */
+}
+
+.handle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* .handle::before,
+.handle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.handle::before {
+  left: 5px;
+}
+
+.handle::after {
+  right: 5px;
+} */
+
+.labels {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.beforeLabel,
+.afterLabel {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .container {
+    height: 600px;
+  }
+} 

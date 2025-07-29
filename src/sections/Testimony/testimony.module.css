@@ -1,0 +1,161 @@
+.testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px;
+  gap: 32px;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title h2 {
+  width: 70%;
+}
+
+.testimonialsAvatars {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  filter: opacity(0.5);
+}
+
+.avatarActive {
+  filter: opacity(1);
+}
+
+.testimonyTexts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card {
+  transition: .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  width: 90vw;
+  opacity: 0;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cardActive {
+  opacity: 1;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentImage {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .title {
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .title h2 {
+    width: 100%;
+  }
+
+  .title h3 {
+    width: 100%;
+  }
+
+
+  .img {
+    margin-left: -50px;
+    width: 400px !important;
+  }
+
+  .card {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .testimonials {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  .testimonialsAvatars {
+    width: 350px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contentImage {
+    position: relative;
+    display: block;
+  }
+
+  .quote {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 40px);
+    z-index: 1;
+  }
+
+  .client {
+    border-radius: 50%;
+    border: 3px solid #000;
+    position: absolute;
+  }
+
+  img.client {
+    object-fit: cover !important;
+  }
+
+  .client1 {
+    top: 50px;
+    left: 15px;
+  }
+
+  .client2 {
+    top: 80px;
+    right: 50px;
+  }
+
+  .client3 {
+    bottom: 80px;
+    left: 10px;
+  }
+
+  .client4 {
+    bottom: 50px;
+    right: 70px;
+  }
+
+}
