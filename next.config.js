@@ -2,12 +2,11 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
-    loader: 'custom',
-    loaderFile: './image-loader.js'
+    unoptimized: true
   },
   basePath: '/sinergy',
-  assetPrefix: '/sinergy'
+  assetPrefix: '/sinergy/',
+  trailingSlash: true
 }
 
 module.exports = nextConfig 
