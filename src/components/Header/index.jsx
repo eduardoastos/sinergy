@@ -1,12 +1,12 @@
 'use client'
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 // import Lottie from 'react-lottie' Somente para uso em ambiente de desenvolvimento;
 import animationData from '../../assets/hamburguer-lottie.json';
 import Button from '../Button';
+import CustomImage from '../CustomImage';
 import * as s from './header.module.css';
 import Arrow from '../../../public/arrow';
 import dynamic from 'next/dynamic';
@@ -49,7 +49,7 @@ export default function Header() {
       <header className={s.headerMobile}>
         <div onClick={() => { isOpen && handleClick(); }}>
           <Link href="/">
-            <Image
+            <CustomImage
               className={s.logo}
               src="/logo.png"
               alt="Sinergy logo"
@@ -76,7 +76,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="/produtos/analise-de-documentos" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('analise-de-documentos').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/ocr.svg"
                           width={20}
                           height={20}
@@ -89,7 +89,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="/produtos/bots-de-atendimento-no-whatsapp" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('bots-de-atendimento-no-whatsapp').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/cel.svg"
                           width={20}
                           height={20}
@@ -102,7 +102,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="/produtos/controle-de-agenda" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('controle-de-agenda').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/schedule.svg"
                           width={20}
                           height={20}
@@ -115,7 +115,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="/produtos/mensagens-ativas-no-whatsapp" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('mensagens-ativas-no-whatsapp').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/wpp.svg"
                           width={20}
                           height={20}
@@ -128,7 +128,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="/produtos/chat-com-e-commerce" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('chat-com-e-commerce').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/shop.svg"
                           width={20}
                           height={20}
@@ -141,7 +141,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="/produtos/agente-sdr" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('agente-sdr').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/magnet.svg"
                           width={20}
                           height={20}
@@ -154,7 +154,7 @@ export default function Header() {
                   <li className={`${s.menuItem} ${s.productsOptions}`}>
                     <Link href="https://virtualbay.com.br/" target="_blank" >
                       <Button onClick={() => { setIsProductsOpen(false); }}>
-                        <Image
+                        <CustomImage
                           src="/dress.svg"
                           width={20}
                           height={20}
@@ -196,7 +196,7 @@ export default function Header() {
                 <li className={s.menuItem}>
                   <Link href="/produtos/analise-de-documentos">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                      <Image
+                      <CustomImage
                         src="/ocr.svg"
                         width={30}
                         height={30}
@@ -209,7 +209,7 @@ export default function Header() {
                 <li className={s.menuItem}>
                   <Link href="/produtos/bots-de-atendimento-no-whatsapp">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                      <Image
+                      <CustomImage
                         src="/cel.svg"
                         width={30}
                         height={30}
@@ -222,7 +222,7 @@ export default function Header() {
                 <li className={s.menuItem}>
                   <Link href="/produtos/controle-de-agenda">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                      <Image
+                      <CustomImage
                         src="/schedule.svg"
                         width={30}
                         height={30}
@@ -235,7 +235,7 @@ export default function Header() {
                 <li className={s.menuItem}>
                   <Link href="/produtos/mensagens-ativas-no-whatsapp">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                      <Image
+                      <CustomImage
                         src="/wpp.svg"
                         width={30}
                         height={30}
@@ -248,7 +248,7 @@ export default function Header() {
                 <li className={s.menuItem}>
                   <Link href="/produtos/chat-com-e-commerce">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                      <Image
+                      <CustomImage
                         src="/shop.svg"
                         width={30}
                         height={30}
@@ -261,7 +261,7 @@ export default function Header() {
                 <li className={s.menuItem}>
                   <Link href="/produtos/agente-sdr">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                      <Image
+                      <CustomImage
                         src="/magnet.svg"
                         width={30}
                         height={30}
@@ -274,7 +274,7 @@ export default function Header() {
                 <li className={`${s.menuItem}`}>
                     <Link href="https://virtualbay.com.br/" target="_blank">
                       <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
-                        <Image
+                        <CustomImage
                           src="/dress.svg"
                           width={30}
                           height={30}
