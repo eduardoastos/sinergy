@@ -1,0 +1,302 @@
+.container {
+  position: fixed !important;
+  width: 100svw;
+  max-width: 1024px;
+  z-index: 999;
+}
+
+.headerMobile {
+  top: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: rgba(255, 255, 255);
+  z-index: 2;
+}
+
+.hamburguer {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.cover {
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+.coverOpen {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menuOverlay {
+  top: -460px;
+  position: fixed;
+  z-index: -1;
+
+  height: fit-content;
+  width: 100svw;
+  max-width: 1024px;
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: white;
+  transition: 0.6s ease;
+}
+
+.menuOverlay::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: calc(50cqw - 20%);
+  width: 40%;
+  height: 3px;
+  background-color: var(--color-primary);
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 1);
+  transition: .8s ease-in-out;
+}
+
+.menuOverlayOpen {
+  top: 100px;
+}
+
+.menuOverlayOpen.menuOverlay::after {
+  left: 0;
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 0;
+}
+
+.menuItem {
+  font-size: 12px;
+  margin-left: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 16px 0;
+  position: relative;
+}
+
+.iconWhite {
+  filter: brightness(0) invert(1);
+}
+
+.subNav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 16px;
+}
+
+.subNav .menuItem {
+  margin: 0;
+  margin-top: 16px;
+}
+
+.navMenuClosed {
+  display: flex;
+}
+
+.logo {
+  max-width: 200px;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.buttons a,
+.buttons button {
+  width: 100%;
+  height: 60px;
+}
+
+.highlight {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.headerWeb {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .headerWeb {
+    display: block;
+    /* margin-right: 15vw; */
+  }
+
+  .logo {
+    /* margin-left: 15vw; */
+  }
+
+  .container{
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  /* .container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 237px;
+    height: 3px;
+    background: radial-gradient(circle, rgba(10, 135, 255, 1) 10%, rgba(0, 0, 0, 1) 234%);
+    transition: width .3s ease-in-out;
+  }
+
+  .container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    right: 237px;
+    width: 262px;
+    height: 8px;
+    background-color: var(--color-white);
+    z-index: 2;
+  } */
+
+  .container.open::after {
+    width: 100%;
+    max-width: 1024px;
+    border-radius: 0;
+  }
+
+  .menuOverlay {
+    display: none;
+  }
+
+  .cover {
+    display: none;
+  }
+
+  .hamburguer {
+    display: none !important;
+  }
+
+  .subNav {
+    background-color: var(--color-white);
+    position: absolute;
+    top: -312px;
+    right: -10px;
+
+    z-index: -1;
+    transition: top .7s ease;
+
+    gap: 0;
+
+    grid-template-columns: 1fr;
+    border-radius: 4px;
+  }
+
+  .subNav button {
+    padding: 16px;
+    transition: .2s ease-in;
+    border-radius: 0;
+    background-color: var(--color-primary-ligth);
+    color: var(--color-primary);;
+  }
+
+  .productsOptions img {
+    transition: .3s ease;
+  }
+
+  .subNav button:hover img {
+    filter: brightness(100) invert(0);
+  }
+
+  .subNav button:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+
+  .subNavOpen {
+    top: 55px;
+    border-top: 3px solid var(--color-white);
+    transition: top .6s ease, z-index .1s ease .6s;
+  }
+
+  .subNav .menuItem {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .menuItem {
+    font-size: unset;
+  }
+
+  .menuOptions {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .contactNow {
+    width: 180px;
+    height: 60px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .productsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .productsOptions button {
+    height: 100%;
+    width: 230px;
+    flex-direction: row-reverse;
+    gap: 8px;
+    justify-content: flex-start !important;
+    text-align: right !important;
+  }
+
+  .arrow {
+    transition: .4s ease;
+  }
+
+  .arrowOpen {
+    transform: rotate(180deg);
+  }
+}
+
+
+/* @media (min-width: 1024px) {
+  .headerWeb {
+    margin-right: 64px;
+  }
+
+  .logo {
+    margin-left: 64px;
+  }
+} */
