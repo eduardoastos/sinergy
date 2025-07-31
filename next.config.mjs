@@ -10,6 +10,8 @@ const nextConfig = {
   },
   basePath: repo ? `/${repo}` : '',
   assetPrefix: repo ? `/${repo}/` : '',
+  distDir: 'out',
+  skipTrailingSlashRedirect: true,
 };
 
 export default nextConfig;

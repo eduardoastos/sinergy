@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sinergy Landing Page
 
-## Getting Started
+Este repositório contém a landing page da Sinergy construída com **Next.js 15** e o novo router/app dir.
 
-First, run the development server:
+O projeto está configurado para ser publicado automaticamente no **GitHub Pages**.
+
+---
+
+## Pré-requisitos
+
+* Node.js ≥ 18 (recomendado 20)
+* npm ≥ 9 ou Yarn ≥ 1
+
+---
+
+## Ambiente de desenvolvimento
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# instalar dependências
+npm install         # ou yarn
+
+# iniciar servidor de desenvolvimento
+npm run dev         # ou yarn dev
+
+# abra o navegador em http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Durante o desenvolvimento, qualquer alteração em arquivos dentro de `src/` recarregará a página automaticamente.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build para produção (estático)
 
-## Learn More
+```bash
+npm run build       # ou yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+* O comando gera uma versão **exportada estaticamente** na pasta `out/`, pronta para ser hospedada em qualquer servidor estático.
+* A configuração em `next.config.mjs` define:
+  * `output: 'export'` ‑ exportação estática
+  * `trailingSlash: true` ‑ URLs terminam com `/`, requisito do GitHub Pages
+  * `basePath` / `assetPrefix` dinâmicos via `NEXT_PUBLIC_BASE_PATH` (nome do repositório)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy automático no GitHub Pages
 
-## Deploy on Vercel
+1. Faça _push_ para a branch **main**.
+2. O GitHub Actions (`.github/workflows/deploy.yml`) irá:
+   * Instalar dependências (`npm install`)
+   * Executar `npm run build` (export estático)
+   * Publicar o conteúdo da pasta `out/` no branch **gh-pages** utilizando [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages).
+3. Acesse as configurações do repositório → **Pages** e selecione:
+   * **Source**: Branch `gh-pages`, pasta `/`.
+4. O site ficará disponível em `https://<usuário>.github.io/<repositório>/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Caso utilize um repositório chamado `<usuário>.github.io` (domínio raiz), basta remover a variável `NEXT_PUBLIC_BASE_PATH` da etapa *Build static site* no workflow ou deixá-la vazia.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Estrutura do projeto
+
+```
+sinergy/
+ ├─ public/            # imagens, vídeos e ícones
+ ├─ src/
+ │  ├─ app/            # rotas da aplicação (Next.js App Router)
+ │  ├─ components/     # componentes reutilizáveis
+ │  └─ sections/       # seções da página
+ ├─ .github/workflows/ # CI para deploy
+ ├─ next.config.mjs    # config Next.js (export estático)
+ └─ package.json
+```
+
+---
+
+## Fontes e créditos
+
+Este template foi gerado a partir de [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+* Ícones e imagens estão na pasta `public/`.
+* Animações Lottie: `src/assets/`.
+
+---
+
+## License
+
+MIT
