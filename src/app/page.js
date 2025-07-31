@@ -1,8 +1,20 @@
+import SmartSolutions from "@/sections/SmartSolutions";
+import * as s from "./(home)/home.module.css";
+import Products from "@/sections/Products";
+import WhyContract from "@/sections/WhyContract";
+import Testimony from "@/sections/Testimony";
+import Faq from "@/sections/Faq";
+import Contact from "@/sections/contact";
+
 export default function Home() {
   return (
-    <main style={{ padding: '20px', textAlign: 'center' }}>
-      <h1>Sinergy - Landing Page</h1>
-      <p>Página principal carregada com sucesso!</p>
+    <main className={s.home}>
+      <SmartSolutions />
+      <Products />
+      <WhyContract />
+      <Testimony />
+      <Faq />
+      <Contact />
     </main>
   );
 }

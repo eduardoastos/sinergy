@@ -8,6 +8,7 @@ const nextConfig = {
   },
   basePath: '/sinergy',
   assetPrefix: '/sinergy/',
+  skipTrailingSlashRedirect: true,
 };
 
 export default nextConfig;
