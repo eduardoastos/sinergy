@@ -14,7 +14,7 @@ export default function WhyContract() {
           <h2>Por Que Contratar?</h2>
         </div>
         <div className={s.alert}>
-          <Image src="/alert.svg" width={25} height={25} alt="Icone azul redondo com um sino desenhado no meio"/>
+          <Image src="/sinergy/alert.svg" width={25} height={25} alt="Icone azul redondo com um sino desenhado no meio"/>
           <h4>Simplifique multiplicando</h4>
         </div>
         <p>Com os nossos serviços o seu fluxo de trabalho fica mais simples, mais rapido e mais eficiente. Pare de executar tarefas que podem ser completamente automatizadas aumentando sua produção com menos da metade do esforço!
@@ -23,7 +23,7 @@ export default function WhyContract() {
           <Button variant="primary" >Contrate Já</Button>
         </Link>
       </div>
-      <Image className={s.img} src="/banner.png" alt="Desenho de mão mexendo em um celular" width={100} height={200} style={{
+      <Image className={s.img} src="/sinergy/banner.png" alt="Desenho de mão mexendo em um celular" width={100} height={200} style={{
           width: '100%',
           height: 'auto'
         }}/>

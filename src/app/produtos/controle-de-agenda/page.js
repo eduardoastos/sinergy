@@ -65,7 +65,7 @@ export default async function Page() {
           </p>
         </div>
         <div className={s.media}>
-          <Player className={s.video} src="/videos/controle-de-agenda02.mp4" loop controls />
+          <Player className={s.video} src="/sinergy/videos/controle-de-agenda02.mp4" loop controls />
         </div>
       </section>
       
@@ -77,7 +77,7 @@ export default async function Page() {
           <p>Não precisa acompanhar manualmente seus visitantes. O bot cuida de tudo e alerta automaticamente seus clientes para agendamentos próximos.</p>
         </div>
         <div className={s.imageContainer}>
-          <Player className={s.video2} src="/videos/confirmacao.mp4" loop controls />
+          <Player className={s.video2} src="/sinergy/videos/confirmacao.mp4" loop controls />
         </div>
       </section>
 
@@ -91,7 +91,7 @@ export default async function Page() {
             <p>Seus clientes podem reagendar compromissos de forma autônoma através do bot, sem precisar entrar em contato diretamente. Tudo de forma simples e automatizada.</p>
           </div>
           <div className={s.imageContainer}>
-            <Player className={s.video2} src="/videos/reagendamento.mp4" loop controls />
+            <Player className={s.video2} src="/sinergy/videos/reagendamento.mp4" loop controls />
           </div>
         </div>
 
@@ -104,7 +104,7 @@ export default async function Page() {
           <p>Permita que seus clientes cancelem compromissos de forma autônoma através do bot com um processo simples e rápido, sem necessidade de intervenção manual da sua equipe.</p>
         </div>
         <div className={s.imageContainer}>
-          <Player className={s.video2} src="/videos/cancelamento.mp4" loop controls />
+          <Player className={s.video2} src="/sinergy/videos/cancelamento.mp4" loop controls />
         </div>
       </section>
 

@@ -35,7 +35,7 @@ export default function ImageComparison() {
     >
       <div className={styles.imgWrapper}>
         <Image
-          src="/imagem02.png"
+          src="/sinergy/imagem02.png"
           alt="Antes"
           fill
           className={styles.img}
@@ -46,7 +46,7 @@ export default function ImageComparison() {
         style={{ width: `${position}%` }}
       >
         <Image
-          src="/imagem01.png"
+          src="/sinergy/imagem01.png"
           alt="Depois"
           fill
           className={styles.img}
@@ -58,7 +58,7 @@ export default function ImageComparison() {
       >
         <div className={styles.handle}>
           <Image
-            src="/logo_small.svg"
+            src="/sinergy/logo_small.svg"
             alt="Logo handle"
             width={32}
             height={32}

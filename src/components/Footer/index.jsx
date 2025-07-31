@@ -12,7 +12,7 @@ export default function Footer() {
           <li>
             <Image
               className={s.header}
-              src="/logo.png"
+              src="/sinergy/logo.png"
               alt="Sinergy logo"
               
               width={80}
@@ -24,10 +24,10 @@ export default function Footer() {
               }}
             />
           </li>
-          <li><a target="_blank" href="mailto:contato@sinergy.com.br"><Image src="/email.svg" alt="Icone de email. Um desenho de um envelope em azul" width={20} height={20} />contato@sinergy-ia.com</a></li>
-          <li><a target="_blank" href="https://wa.me/+5511935031331/?text=Olá!"><Image src="/whats.svg" alt="Ícone do WhatsApp em azul" width={20} height={20} />+55 11 9 3503-1331</a></li>
-          <li><a target="_blank" href="https://www.instagram.com/sinergy.ia"><Image src="/insta.svg" alt="Icone do instagram em azul" width={20} height={20} />sinergy.ia</a></li>
-          {/* <li><a target="__blank" href=""><Image src="/linkedin.svg" alt="Icone do linkedin em azul" width={20} height={20} />sinergy ia</a></li> */}
+          <li><a target="_blank" href="mailto:contato@sinergy.com.br"><Image src="/sinergy/email.svg" alt="Icone de email. Um desenho de um envelope em azul" width={20} height={20} />contato@sinergy-ia.com</a></li>
+          <li><a target="_blank" href="https://wa.me/+5511935031331/?text=Olá!"><Image src="/sinergy/whats.svg" alt="Ícone do WhatsApp em azul" width={20} height={20} />+55 11 9 3503-1331</a></li>
+          <li><a target="_blank" href="https://www.instagram.com/sinergy.ia"><Image src="/sinergy/insta.svg" alt="Icone do instagram em azul" width={20} height={20} />sinergy.ia</a></li>
+          {/* <li><a target="__blank" href=""><Image src="/sinergy/linkedin.svg" alt="Icone do linkedin em azul" width={20} height={20} />sinergy ia</a></li> */}
         </ul>
         <ul className={`${s.linksList} ${s.disableMobile}`}>
           <li>

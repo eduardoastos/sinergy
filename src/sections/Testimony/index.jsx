@@ -38,11 +38,11 @@ export default function Testimony() {
       </div>
       <div className={s.content}>
         <div className={s.contentImage}>
-          <Image src="/client4.jpg" className={`${s.client} ${s.client4}`} alt="" width={80} height={80} />
-          <Image src="/client3.jpg" className={`${s.client} ${s.client3}`} alt="" width={90} height={90} />
-          <Image src="/client2.jpg" className={`${s.client} ${s.client2}`} alt="" width={80} height={80} />
-          <Image src="/client1.jpg" className={`${s.client} ${s.client1}`} alt="" width={80} height={80} />
-          <Image className={s.quote} src="/quote.svg" width={50} height={50} alt="" />
+          <Image src="/sinergy/client4.jpg" className={`${s.client} ${s.client4}`} alt="" width={80} height={80} />
+          <Image src="/sinergy/client3.jpg" className={`${s.client} ${s.client3}`} alt="" width={90} height={90} />
+          <Image src="/sinergy/client2.jpg" className={`${s.client} ${s.client2}`} alt="" width={80} height={80} />
+          <Image src="/sinergy/client1.jpg" className={`${s.client} ${s.client1}`} alt="" width={80} height={80} />
+          <Image className={s.quote} src="/sinergy/quote.svg" width={50} height={50} alt="" />
           <Image className={s.img} src="videos-bg.svg" height={300} width={400} alt="" style={{
           width: '100%',
           height: 'auto'

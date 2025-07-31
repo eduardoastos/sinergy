@@ -125,14 +125,14 @@ export default function Page() {
           <p>No mundo digital de hoje, a agilidade no atendimento ao cliente é essencial para o sucesso de qualquer negócio. Com um bot de atendimento no WhatsApp, você automatiza conversas, responde rapidamente às dúvidas e melhora a experiência do cliente de forma eficiente e escalável.</p>
         </div>
         <div className={s.media}>
-          <Player className={s.video} src="/videos/bots-de-atendimento.mp4" loop controls />
+          <Player className={s.video} src="/sinergy/videos/bots-de-atendimento.mp4" loop controls />
         </div>
       </section>
 
       
       <div>
         <h2>Atenda seus clientes em um só lugar!</h2>
-        <Player className={s.videoATH} src="/videos/bots-de-atendimento-ATH.mp4" loop controls />
+        <Player className={s.videoATH} src="/sinergy/videos/bots-de-atendimento-ATH.mp4" loop controls />
       </div>
 
       <section className={s.pricing}>

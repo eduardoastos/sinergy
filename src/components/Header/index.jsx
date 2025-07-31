@@ -77,7 +77,7 @@ export default function Header() {
                     <Link href="/produtos/analise-de-documentos" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('analise-de-documentos').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/ocr.svg"
+                          src="/sinergy/ocr.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -90,7 +90,7 @@ export default function Header() {
                     <Link href="/produtos/bots-de-atendimento-no-whatsapp" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('bots-de-atendimento-no-whatsapp').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/cel.svg"
+                          src="/sinergy/cel.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -103,7 +103,7 @@ export default function Header() {
                     <Link href="/produtos/controle-de-agenda" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('controle-de-agenda').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/schedule.svg"
+                          src="/sinergy/schedule.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -116,7 +116,7 @@ export default function Header() {
                     <Link href="/produtos/mensagens-ativas-no-whatsapp" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('mensagens-ativas-no-whatsapp').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/wpp.svg"
+                          src="/sinergy/wpp.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -129,7 +129,7 @@ export default function Header() {
                     <Link href="/produtos/chat-com-e-commerce" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('chat-com-e-commerce').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/shop.svg"
+                          src="/sinergy/shop.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -142,7 +142,7 @@ export default function Header() {
                     <Link href="/produtos/agente-sdr" scroll={false} onClick={() => window.scrollTo({ top: document.getElementById('agente-sdr').offsetTop - 100, behavior: 'smooth' })}>
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/magnet.svg"
+                          src="/sinergy/magnet.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -155,7 +155,7 @@ export default function Header() {
                     <Link href="https://virtualbay.com.br/" target="_blank" >
                       <Button onClick={() => { setIsProductsOpen(false); }}>
                         <Image
-                          src="/dress.svg"
+                          src="/sinergy/dress.svg"
                           width={20}
                           height={20}
                           alt="icon"
@@ -197,7 +197,7 @@ export default function Header() {
                   <Link href="/produtos/analise-de-documentos">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                       <Image
-                        src="/ocr.svg"
+                        src="/sinergy/ocr.svg"
                         width={30}
                         height={30}
                         alt="icon"
@@ -210,7 +210,7 @@ export default function Header() {
                   <Link href="/produtos/bots-de-atendimento-no-whatsapp">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                       <Image
-                        src="/cel.svg"
+                        src="/sinergy/cel.svg"
                         width={30}
                         height={30}
                         alt="icon"
@@ -223,7 +223,7 @@ export default function Header() {
                   <Link href="/produtos/controle-de-agenda">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                       <Image
-                        src="/schedule.svg"
+                        src="/sinergy/schedule.svg"
                         width={30}
                         height={30}
                         alt="icon"
@@ -236,7 +236,7 @@ export default function Header() {
                   <Link href="/produtos/mensagens-ativas-no-whatsapp">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                       <Image
-                        src="/wpp.svg"
+                        src="/sinergy/wpp.svg"
                         width={30}
                         height={30}
                         alt="icon"
@@ -249,7 +249,7 @@ export default function Header() {
                   <Link href="/produtos/chat-com-e-commerce">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                       <Image
-                        src="/shop.svg"
+                        src="/sinergy/shop.svg"
                         width={30}
                         height={30}
                         alt="icon"
@@ -262,7 +262,7 @@ export default function Header() {
                   <Link href="/produtos/agente-sdr">
                     <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                       <Image
-                        src="/magnet.svg"
+                        src="/sinergy/magnet.svg"
                         width={30}
                         height={30}
                         alt="icon"
@@ -275,7 +275,7 @@ export default function Header() {
                     <Link href="https://virtualbay.com.br/" target="_blank">
                       <Button variant="secondaryFullWidth" onClick={() => { handleClick(); }}>
                         <Image
-                          src="/dress.svg"
+                          src="/sinergy/dress.svg"
                           width={30}
                           height={30}
                           alt="icon"

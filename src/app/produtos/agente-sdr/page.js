@@ -50,7 +50,7 @@ export default async function Page() {
           </p>
         </div>
         <div className={s.media}>
-          <Player className={s.video} src="/videos/sdr.mp4" loop controls />
+          <Player className={s.video} src="/sinergy/videos/sdr.mp4" loop controls />
         </div>
       </section>
 

@@ -71,7 +71,7 @@ export default function Page() {
           </p>
         </div>
         <div className={s.media}>
-          <Player className={s.video} src="/videos/foxy_appyy.mp4" loop controls />
+          <Player className={s.video} src="/sinergy/videos/foxy_appyy.mp4" loop controls />
         </div>
       </section>
       
@@ -103,7 +103,7 @@ export default function Page() {
         alignItems: 'center' }}
       >
         <h2 style={{textAlign: 'center'}}>Atenda seus clientes em um só lugar!</h2>
-        <Player className={s.videoATH} src="/videos/bots-de-atendimento-ATH.mp4" loop controls />
+        <Player className={s.videoATH} src="/sinergy/videos/bots-de-atendimento-ATH.mp4" loop controls />
       </div>
 
       <section className={s.integration}>
@@ -116,7 +116,7 @@ export default function Page() {
           </p>
         </div>
         <Image
-          src="/fox_sinergy02.png"
+          src="/sinergy/fox_sinergy02.png"
           alt="Diagrama mostrando a integração entre o chat IA e FoxAppy"
           width={648}
           height={300}

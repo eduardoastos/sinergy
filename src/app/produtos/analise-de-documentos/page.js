@@ -48,7 +48,7 @@ export default async function Page() {
           </p>
         </div>
         <div className={s.media}>
-          <Player className={s.video} src="/videos/ocr.mp4" loop controls />
+          <Player className={s.video} src="/sinergy/videos/ocr.mp4" loop controls />
         </div>
       </section>
 
@@ -61,8 +61,8 @@ export default async function Page() {
           </p>
         </div>
         <div className={s.media}>
-          <Image className={s.videoBgWeb} src="/videos-bg.svg" alt="Tres circulos alinhados e rotacionados que ficam ao fundo do player de video" width={300} height={500} />
-          <Player className={s.videoWeb} src="/videos/ocr.mp4" controls />
+          <Image className={s.videoBgWeb} src="/sinergy/videos-bg.svg" alt="Tres circulos alinhados e rotacionados que ficam ao fundo do player de video" width={300} height={500} />
+          <Player className={s.videoWeb} src="/sinergy/videos/ocr.mp4" controls />
         </div>
       </section> */}
 

@@ -12,7 +12,7 @@ export default function Contact() {
           <h2 className={s.subtitle}>Aproveite para testar nossa ferramenta </h2>
           <Button className={s.button} variant="primary" onClick={() => window.open("https://wa.me/+5511935031331/?text=Olá!", "_blank")}>Começe já</Button>
         </div>
-        <Image src="/cel-contact.png" className={s.img} width={20} height={20} alt="Um celular apresentando a tela do whatsapp com um exemplo de conversa com o bot de atendimento" style={{
+        <Image src="/sinergy/cel-contact.png" className={s.img} width={20} height={20} alt="Um celular apresentando a tela do whatsapp com um exemplo de conversa com o bot de atendimento" style={{
           width: '100%',
           height: 'auto'
         }}/>

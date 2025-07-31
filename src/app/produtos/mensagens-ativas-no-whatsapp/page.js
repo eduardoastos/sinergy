@@ -51,7 +51,7 @@ export default function Page() {
           </p>
         </div>
         <div className={s.media}>
-          <Player className={s.video} src="/videos/confirmacao.mp4" loop controls />
+          <Player className={s.video} src="/sinergy/videos/confirmacao.mp4" loop controls />
         </div>
       </section>
 
