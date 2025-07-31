@@ -5,8 +5,6 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-    loader: 'custom',
-    loaderFile: './src/utils/imageLoader.js',
   },
   basePath: '/sinergy',
   assetPrefix: '/sinergy/',

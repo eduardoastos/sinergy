@@ -51,7 +51,7 @@ export default function Header() {
           <Link href="/">
             <Image
               className={s.logo}
-              src="/logo.png"
+              src="/sinergy/logo.png"
               alt="Sinergy logo"
               width={100}
               height={38}
