@@ -43,7 +43,7 @@ export default function Testimony() {
           <Image src="/sinergy/client2.jpg" className={`${s.client} ${s.client2}`} alt="" width={80} height={80} />
           <Image src="/sinergy/client1.jpg" className={`${s.client} ${s.client1}`} alt="" width={80} height={80} />
           <Image className={s.quote} src="/sinergy/quote.svg" width={50} height={50} alt="" />
-          <Image className={s.img} src="videos-bg.svg" height={300} width={400} alt="" style={{
+          <Image className={s.img} src="/sinergy/videos-bg.svg" height={300} width={400} alt="" style={{
           width: '100%',
           height: 'auto'
         }}/>

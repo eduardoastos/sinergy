@@ -12,42 +12,42 @@ export default function Products() {
       id: 'analise-de-documentos',
       title: 'Análise de Documentos (OCR)',
       description: 'Elimine a digitação manual, reduza erros e otimize seus processos com uma solução que extrai informações automáticamente com precisão e agilidade incomparáveis! Colete dados de uma base de curriculos, CNHs ou qualquer outro documento',
-      icon: '/ocr.svg',
+      icon: '/sinergy/ocr.svg',
       icontAlt: 'Icone com um gráfico em azul'
     },
     {
       id: 'bots-de-atendimento-no-whatsapp',
       title: 'Bots de Atendimento',
       description: 'Automatize o atendimento da sua empresa com bots inteligentes que interagem naturalmente com seus clientes, gerenciam agendamentos e otimizam seu tempo. Experimente uma solução que revolucionará o relacionamento com o seu público!',
-      icon: '/cel.svg',
+      icon: '/sinergy/cel.svg',
       icontAlt: 'Icone minimalista de um celular somente com as bordas em azul e interior em branco'
     },
     {
       id: 'controle-de-agenda',
       title: 'Controle de Agenda',
       description: 'Revolucione o modo como você lida com seus agendamentos! Automatize todo o processo de agendamento para que seus clientes possam agendar qualquer serviço de forma totalmente independente sem necessidade de intervenção humana, reduzindo consideravelmente seu tempo de resposta e melhorando a experiência dos seus clientes',
-      icon: '/schedule.svg',
+      icon: '/sinergy/schedule.svg',
       icontAlt: 'Icone minimalista de um notebook aberto visto de frente feito apenas com linhas azuis de mesma expessura e interior branco'
     },
     {
       id: 'mensagens-ativas-no-whatsapp',
       title: 'Mensagens Ativas no WhatsApp',
       description: 'Dispare mensagens para todos seus clientes com um só clique! Faça um pós venda personalizado agregando muito valor a experiência do seu cliente e coletando os melhores dados para aprimorar ainda mais seu atendimento. Envie promoções com facilidade e lembre aquele cliente que sempre compra com você para garantir aquela venda no fim do mês',
-      icon: '/wpp.svg',
+      icon: '/sinergy/wpp.svg',
       icontAlt: 'Icone do aplicativo de celular WhatsApp somente feito com as bordas em azul'
     },
     {
       id: 'chat-com-e-commerce',
       title: 'Chat com IA para E-commerce',
       description: 'Transforme seu e-commerce com atendimento inteligente 24/7. Nossa solução de IA, em parceria com a FoxAppy, aumenta suas vendas, reduz abandonos de carrinho e melhora a satisfação dos clientes.',
-      icon: '/shop.svg',
+      icon: '/sinergy/shop.svg',
       icontAlt: 'Icone do carrinho de compras feito com borda azul'
     },
     {
       id: 'agente-sdr',
       title: 'Agente SDR',
       description: 'Encontre clientes ideais e entre em contato instantaneamente usando IA! Com 1 clique, busque comércios no Google Maps e outras fontes, extraia seus dados e envie mensagens automáticas no WhatsApp.',
-      icon: '/magnet.svg',
+      icon: '/sinergy/magnet.svg',
       icontAlt: 'Icone do carrinho de compras feito com borda azul'
     },
     ,
@@ -55,7 +55,7 @@ export default function Products() {
       id: 'provador-virtual',
       title: 'Provador Virtual',
       description: 'Leve a experiência de compra online a um novo nível! Com o Provador Virtual, seus clientes experimentam roupas de forma interativa e realista antes de comprar, aumentando o engajamento e reduzindo trocas e devoluções. Transforme sua vitrine digital com tecnologia de ponta que simula caimento, cores e tamanhos com precisão!',
-      icon: '/dress.svg',
+      icon: '/sinergy/dress.svg',
       icontAlt: 'Icone de uma roupa'
     },
   ];
