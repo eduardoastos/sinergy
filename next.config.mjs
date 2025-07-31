@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const repo = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 const nextConfig = {
   reactStrictMode: false,
   output: 'export',
@@ -8,10 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: repo ? `/${repo}` : '',
-  assetPrefix: repo ? `/${repo}/` : '',
-  distDir: 'out',
-  skipTrailingSlashRedirect: true,
+  basePath: '/sinergy',
+  assetPrefix: '/sinergy/',
 };
 
 export default nextConfig;
